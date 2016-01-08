@@ -25,6 +25,16 @@ http.request = function (opts, cb) {
 	opts.method = (opts.method || 'GET').toUpperCase()
 	opts.headers = opts.headers || {}
 
+	opts.crossOrigin = false
+	try {
+		if (protocol && protocol !== window.location.protocol)
+		if (host && host !== window.location.hostname)
+
+		var defaultPort = window.location.protocol === 'https:' ? 443 : 80
+		if (port || defaultPort !== window.location.port || defaultPort)
+		if (host && window.location)
+	}
+
 	// Also valid opts.auth, opts.mode
 
 	var req = new ClientRequest(opts)
